@@ -1,0 +1,95 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            height: 26px;
+            text-align: center;
+        }
+        .font
+        {font-size:53px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <table class="style1" bgcolor="#0099FF">
+                <tr>
+                    <td style="text-align: left" bgcolor="White">
+                        <asp:Image ID="Image1" runat="server" Height="210px" 
+                            ImageUrl="~/PHOTO/LOGOTE1.png" Width="270px" style="text-align: left" />
+                    </td>
+                    <td style="text-align: left" bgcolor="White">
+                        <font class=font><strong>ONLINE TEACHING MANAGEMENT SYSTEM</strong><br />
+                        </font><table class="style1">
+                            <tr>
+                                <td class="style2">
+                                
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<MARQUEE BGCOLOR="YELLOWRED" DIRECTION="RIGHT">WELCOME TO MY TEACHING WEBSITE</MARQUEE>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                    
+</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="White" colspan="2" style="font-size: xx-large">
+                        &nbsp;
+                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/HOME.aspx">HOME</asp:HyperLink>
+                        &nbsp;&nbsp;
+                        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/about.aspx">ABOUT US</asp:HyperLink>
+                        &nbsp;&nbsp;
+                        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/register.aspx">REGISTER</asp:HyperLink>
+                        &nbsp;&nbsp;&nbsp;
+                        <asp:HyperLink ID="HyperLink10" runat="server" 
+                            NavigateUrl="~/ADDSTAFFaspx.aspx">STAFF DETAILS</asp:HyperLink>
+&nbsp;
+                        &nbsp;&nbsp;
+                        <asp:HyperLink ID="HyperLink11" runat="server" NavigateUrl="~/Default.aspx">COURSE</asp:HyperLink>
+                        &nbsp;&nbsp; &nbsp;
+                        <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/LOGIN.aspx">LOG IN</asp:HyperLink>
+                        &nbsp;&nbsp;
+                        <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/CONTACT.aspx">CONTACT US</asp:HyperLink>
+&nbsp;
+                        </td>
+                </tr>
+                <tr>
+                    <td colspan="2" bgcolor="White">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+               
+                </table>
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    <table class="style1">
+        <tr>
+            <td>
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td>
+                <asp:Image ID="Image2" runat="server" 
+                    ImageUrl="~/PHOTO/Screenshot 2024-05-22 214713.png" Width="1547px" />
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
